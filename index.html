@@ -3,80 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>44Store - Your Online Shop</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <title>Website with Logo</title>
+</head>
+<body>
     <header>
         <div class="container">
-            <h1>44Store</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- Cart Icon -->
-            <div id="cart-icon">
-                <span id="cart-count">0</span> Items in Cart
-                <button onclick="toggleCart()">View Cart</button>
-            </div>
+            <!-- Logo with an image -->
+            <img src="https://cdn.discordapp.com/attachments/1312918320697053226/1352453081136369666/download-resizehood.com.png?ex=67de1195&is=67dcc015&hm=f7e6729f6bc0c4b7e7c0af00df36199b24dbfba2827a340471853a165ce7e9e1&" alt="44Store Logo" id="logo">
         </div>
     </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to 44Store</h2>
-            <p>Your one-stop shop for the best products at great prices.</p>
-            <button><a href="#shop">Shop Now</a></button>
-        </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop">
-        <div class="container">
-            <h2>منتجاتنا الحالية</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="product1.jpg" alt="📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒">
-                    <h3>📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒</h3>
-                    <p>$19.99</p>
-                    <button>Add to Cart</button>
+</body>
+</html>
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <h1>44 Store</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Cart Icon -->
+                <div id="cart-icon">
+                    <span id="cart-count">0</span> Items in Cart
+                    <button onclick="toggleCart()">View Cart</button>
                 </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="📦┋سيرفرك・علينا">
-                    <h3>📦┋سيرفرك・علينا</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="📥┋تغير・حقوق">
-                    <h3>📥┋تغير・حقوق</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="📜┋برمجة・سيرفر">
-                    <h3>📜┋برمجة・سيرفر</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="💻〡خوادم-اقتصادية">
-                    <h3>💻〡خوادم-اقتصادية</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- More products can be added here -->
             </div>
-        </div>
-    </section>
+        </header>
+    
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <h2>44Store حياك الله في</h2>
+                <p>اشتري كل شي يساعدك في انشاء سيرفرك</p>
+                <button><a href="#shop">اشتري الان</a></button>
+            </div>
+        </section>
+    
+        <!-- Shop Section -->
+        <section id="shop">
+            <div class="container">
+                <h2>منتجاتنا الحالية</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="https://cdn.discordapp.com/attachments/1227555222310879292/1350489525595668695/IMG_2775.png?ex=67dd8461&is=67dc32e1&hm=046dc7351d13e370ceb09d47d80e431677935b2fc850ff1523015087b4bffe58&" alt="📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒">
+                        <h3>📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒</h3>
+                        <p>$19.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">اضف للحقيبة</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://cdn.discordapp.com/attachments/1227555222310879292/1350489525595668695/IMG_2775.png?ex=67dd8461&is=67dc32e1&hm=046dc7351d13e370ceb09d47d80e431677935b2fc850ff1523015087b4bffe58&" alt="📦┋سيرفرك・علينا">
+                        <h3>📦┋سيرفرك・علينا</h3>
+                        <p>$29.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">اضف للحقيبة</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://cdn.discordapp.com/attachments/1227555222310879292/1350489525595668695/IMG_2775.png?ex=67dd8461&is=67dc32e1&hm=046dc7351d13e370ceb09d47d80e431677935b2fc850ff1523015087b4bffe58&" alt="📥┋تغير・حقوق">
+                        <h3>📥┋تغير・حقوق</h3>
+                        <p>$29.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">اضف للحقيبة</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://cdn.discordapp.com/attachments/1227555222310879292/1350489525595668695/IMG_2775.png?ex=67dd8461&is=67dc32e1&hm=046dc7351d13e370ceb09d47d80e431677935b2fc850ff1523015087b4bffe58&" alt="📜┋برمجة・سيرفر">
+                        <h3>📜┋برمجة・سيرفر</h3>
+                        <p>$29.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">اضف للحقيبة</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://cdn.discordapp.com/attachments/1227555222310879292/1350489525595668695/IMG_2775.png?ex=67dd8461&is=67dc32e1&hm=046dc7351d13e370ceb09d47d80e431677935b2fc850ff1523015087b4bffe58&" alt="💻〡خوادم-اقتصادية">
+                        <h3>💻〡خوادم-اقتصادية</h3>
+                        <p>$29.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">اضف للحقيبة</button>
+                    </div>
+                    <!-- More products can be added here -->
+                </div>
+            </div>
+        </section>
 
-    <!-- Cart Modal -->
+        
+
+            </div>
+            <!-- More products can be added here -->
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
     <div id="cart-modal" class="cart-modal">
         <div class="cart-content">
             <h2>Your Cart</h2>
@@ -89,13 +107,6 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 44Store. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="cart.js"></script> <!-- Link to your cart functionality JavaScript -->
+    <script src="cart.js"></script>
 </body>
 </html>
