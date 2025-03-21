@@ -1,127 +1,49 @@
-/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  padding: 25px;
+  background-color: #E0FFFF; /* Light cyan background */
+  font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-/* Header Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
+  background-color: #00BFFF; /* Deep sky blue */
+  color: white;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin-right: 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+h1, h2, h3 {
+  color: #008B8B; /* Dark cyan */
 }
 
-/* Section Styles */
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    text-align: center;
-    font-size: 28px;
-}
-
-#shop .product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product {
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #00CED1; /* Dark turquoise */
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.product button:hover {
-    background-color: #218838;
-}
-
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Form Styles */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #0056b3;
+  background-color: #00BFFF; /* Deep sky blue */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
