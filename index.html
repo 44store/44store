@@ -19,6 +19,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Cart Icon -->
+            <div id="cart-icon">
+                <span id="cart-count">0</span> Items in Cart
+                <button onclick="toggleCart()">View Cart</button>
+            </div>
         </div>
     </header>
 
@@ -34,17 +39,35 @@
     <!-- Shop Section -->
     <section id="shop">
         <div class="container">
-            <h2>Shop Our Products</h2>
+            <h2>منتجاتنا الحالية</h2>
             <div class="product-list">
                 <div class="product">
-                    <img src="product1.jpg" alt="Product 1">
-                    <h3>Product 1</h3>
+                    <img src="product1.jpg" alt="📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒">
+                    <h3>📁〢𝟜𝟜・𝐅𝐈𝐋𝐄𝐒</h3>
                     <p>$19.99</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="product2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
+                    <img src="product2.jpg" alt="📦┋سيرفرك・علينا">
+                    <h3>📦┋سيرفرك・علينا</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="📥┋تغير・حقوق">
+                    <h3>📥┋تغير・حقوق</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="📜┋برمجة・سيرفر">
+                    <h3>📜┋برمجة・سيرفر</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="💻〡خوادم-اقتصادية">
+                    <h3>💻〡خوادم-اقتصادية</h3>
                     <p>$29.99</p>
                     <button>Add to Cart</button>
                 </div>
@@ -53,26 +76,18 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At 44Store, we offer a wide range of quality products designed to meet your needs. From tech gadgets to home decor, we've got you covered!</p>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div id="cart-total">Total: $0.00</div>
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="closeCart()">Close</button>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have any questions? Reach out to us!</p>
-            <form action="mailto:info@44store.com" method="post" enctype="text/plain">
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <textarea name="message" placeholder="Your Message" required></textarea><br>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer Section -->
     <footer>
@@ -80,5 +95,7 @@
             <p>&copy; 2025 44Store. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="cart.js"></script> <!-- Link to your cart functionality JavaScript -->
 </body>
 </html>
